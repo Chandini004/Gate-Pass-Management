@@ -1,0 +1,135 @@
+/* Import a custom font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; /* Set the font for the body */
+}
+
+h1, p {
+    font-family: 'Arial', sans-serif; /* Font for heading and paragraph */
+}
+
+
+
+
+
+
+
+/* Button container */
+.button-container1 {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Button styles for Get Details */
+.register-button {
+    width: 200px; /* Fixed width for buttons */
+    background: linear-gradient(to right, #0766a1, #2347d4); /* Blue gradient background */
+    color: white; /* White text */
+    font-weight: 600; /* Semi-bold text */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 9999px; /* Fully rounded (pill shape) */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+    background: 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Remove default button outline */
+}
+
+.register-button:hover {
+    background: linear-gradient(to right, #3588e7, #6385e3); /* Lighter gradient on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15), 0 6px 8px rgba(0, 0, 0, 0.1); /* Bigger shadow on hover */
+}
+
+.register-button:focus {
+    box-shadow: 0 0 0 4px rgba(110, 144, 236, 0.4); /* Blue focus ring */
+}
+
+.register-button:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+/* Table styles for student details */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Responsive form layout for smaller screens */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Stack labels and inputs on top of each other */
+    }
+
+    .form-grid label {
+        text-align: left;
+        padding-right: 0;
+    }
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-grid1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+.input-field {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #797777;
+    border-radius: 4px;
+}
+
+.get-details-btn {
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.get-details-btn.enabled {
+    background-color: #090c0f; /* dark gray */
+}
+
+.get-details-btn.enabled:hover {
+    background-color: #374151; /* slightly lighter gray */
+}
+
+.get-details-btn.disabled {
+    background-color: #a1a1a1; /* light gray */
+    cursor: not-allowed;
+}
+
+.error-message {
+    color: rgb(166, 14, 14);
+    font-size: 14px;
+    margin-top: -8px;
+    text-align: center;
+}

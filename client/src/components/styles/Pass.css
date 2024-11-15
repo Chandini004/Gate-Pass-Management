@@ -1,0 +1,117 @@
+/* Import a custom font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    
+}
+
+h1, p {
+    font-family: 'Arial', sans-serif; 
+    color: whitesmoke;/* Font for heading and paragraph */
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+    margin-top: 30px; /* Adds margin to space out from other elements */
+    gap: 15px; /* Adds spacing between buttons */
+}
+
+.button-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 20px; /* Add padding to space out the buttons within the container */
+    background-color: #F3F9FF; /* Light blue background for the button container */
+    border-radius: 10px; /* Round corners of the background container */
+}
+
+.button-container1 {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #E0F0FF; /* Light blue background */
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+}
+
+/* Button styles for Verify Fingerprint and Verify ID */
+.register-button {
+    width: 200px; /* Fixed width for buttons */
+    background: linear-gradient(to right, #0766a1, #2347d4); /* Blue gradient background */
+    color: white; /* White text */
+    font-weight: 600; /* Semi-bold text */
+    padding: 10px 20px; /* Button padding */
+    border-radius: 9999px; /* Fully rounded (pill shape) */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor on hover */
+    outline: none; /* Remove default button outline */
+}
+
+.register-button:hover {
+    background: linear-gradient(to right, #3588e7, #6385e3); /* Lighter gradient on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15), 0 6px 8px rgba(0, 0, 0, 0.1); /* Bigger shadow on hover */
+}
+
+.register-button:focus {
+    box-shadow: 0 0 0 4px rgba(110, 144, 236, 0.4); /* Blue focus ring */
+}
+
+.register-button:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+/* NEW: Styling for the form layout */
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Label and Input fields */
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+
+.form-grid label {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form-grid input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-grid input:focus {
+    border-color: #6385e3;
+    outline: none;
+    box-shadow: 0 0 5px rgba(110, 144, 236, 0.5);
+}
+
+/* Responsive form layout for smaller screens */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Stack labels and inputs on top of each other */
+    }
+
+    .form-grid label {
+        text-align: left;
+        padding-right: 0;
+    }
+}

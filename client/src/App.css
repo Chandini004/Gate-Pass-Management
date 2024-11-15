@@ -1,0 +1,76 @@
+/* App.css */
+
+body {
+  margin: 0;
+  
+  background-color: white;
+ 
+}
+
+/* Top Black Header */
+.header {
+  background-color: #000000; /* Black background */
+  color: white;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: bold;
+    /* Make it take the full width */
+      /* Optional: Set a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Optional: Add a shadow for depth */
+    
+   
+}
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://gmrit.edu.in/images/blocks/Landing.png'); /* Add your image path */
+  background-size: cover; /* Cover the whole screen */
+  background-position: center; /* Center the image */
+  z-index: -1; /* Behind other content */
+  opacity: 0.7; /* Set darkness */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0; /* Layer above the background image */
+}
+.overlay1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255); /* Dark overlay */
+  z-index: 0; /* Layer above the background image */
+}
+
+.content {
+  position: relative;
+  z-index: 1; /* Above the overlay */
+  /* Add some padding if necessary */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  height: 100vh; /* Full height to allow scrolling */
+}
+/* Content Area */
+.main-content {
+  /* App.css */
+  padding: 20px;
+
+}
+
+.main-content h1 {
+  color: #343a40; /* Darker text for headers */
+}
+
+.main-content p {
+  color: #555555;
+  font-size: 16px;
+}

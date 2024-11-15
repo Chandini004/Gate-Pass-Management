@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Import a custom font */
+
+body {
+    font-family: 'Roboto', sans-serif; 
+   /* Cover the entire viewport */
+   
+    /* Set the font for the body */
+}
+.background {
+    position: fixed; /* Fix background image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://gmrit.edu.in/images/blocks/Landing.png'); /* Replace with your image URL */
+    
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    filter: brightness(0.5); /* Darken the image */
+    z-index: 0; /* Ensure it's behind the content */
+}
+.opt{
+
+    padding-bottom: 18px;
+    width: 40px;
+    background:  #e8edf1;
+}
+.registration-container {
+    max-width: 650px;
+    margin: 50px auto;
+    padding: 20px;
+    
+        
+        z-index: 1; /* Ensure content appears above the background */
+       /* Optional: Add some padding */
+    
+    background-color: #E0F0FF; /* Light blue background */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Enhanced box shadow */
+}
+.error-message {
+    color: red;
+    font-size: 0.875rem; /* Slightly smaller than regular text */
+    margin-top: 0.25rem; /* Some space between the input and the message */
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Add some margin for spacing */
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between input fields */
+}
+
+.form-group {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: space-between; /* Space between label and input */
+    align-items: center; /* Align items vertically in the center */
+}
+.parent{
+    width: 355px;
+}
+label {
+    flex: 0 0 40%; /* Fixed width for labels */
+    margin-right: 10px; /* Space between label and input */
+    font-family: 'Arial', sans-serif; /* Change font for labels */
+    font-weight: 600; /* Make label font bold */
+}
+
+input {
+    flex: 1; /* Take the remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for effects */
+}
+
+/* input:focus {
+    border-color: #a2c4e8; 
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); 
+} */
+
+/* Button styles */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+    margin-top: 20px; /* Add margin to space out from other elements */
+    gap: 10px; /* Add spacing between buttons */
+}
+
+.register-button, .back-button, .add-fingerprint-button {
+    width: 200px; /* Ensure all buttons have the same width */
+    background: linear-gradient(to right, #0766a1, #2347d4); /* Blue gradient */
+    color: white; /* White text color */
+    font-weight: 600; /* Semi-bold text */
+    padding: 10px 20px; /* Padding for button size */
+    border-radius: 9999px; /* Fully rounded (pill shape) */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+    transition: transform 0.3s ease;
+    background: 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor */
+    outline: none; /* Remove default button outline */
+}
+
+.register-button:hover, .back-button:hover, .add-fingerprint-button:hover {
+    background: linear-gradient(to right, #3588e7, #6385e3); /* Lighter gradient on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15), 0 6px 8px rgba(0, 0, 0, 0.1); /* Bigger shadow on hover */
+}
+
+.register-button:focus, .back-button:focus, .add-fingerprint-button:focus {
+    box-shadow: 0 0 0 4px rgba(110, 144, 236, 0.4); /* Blue focus ring */
+}
+
+.register-button:active, .back-button:active, .add-fingerprint-button:active {
+    transform: scale(0.98); /* Slight press effect */
+}
